@@ -105,9 +105,8 @@
   "DND5E.ActionSumm": "소환",
   "DND5E.ActionUtil": "유틸리티",
   "DND5E.ActionWarningNoItem": "요청한 아이템 {item}이(가) 더 이상 캐릭터 {name}에게 존재하지 않습니다.",
-  "DND5E.ActionWarningNoToken": "이 기능을 사용하려면 하나 이상의 토큰을 선택해야 합니다."
-}
-"DND5E.ACTIVATION": {
+  "DND5E.ActionWarningNoToken": "이 기능을 사용하려면 하나 이상의 토큰을 선택해야 합니다.",
+  "DND5E.ACTIVATION": {
     "FIELDS": {
       "activation": {
         "label": "활성화",
@@ -210,7 +209,7 @@
       "NoActions": "사용 가능한 {type}이 없지만, 이를 활성화하려면 적어도 {required}의 비용이 필요합니다.",
       "NotEnoughActions": "활성화하기 위한 {type}이 부족합니다. {required}만큼 필요하지만 현재 {available}만 가능합니다."
     }
-"DND5E.ACTIVITY": {
+    "DND5E.ACTIVITY": {
     "Action": {
       "Create": "활동 생성",
       "Delete": "활동 삭제",
@@ -779,8 +778,8 @@
   "DND5E.ArmorHeavyProficiency": "중갑",
   "DND5E.ArmorLightProficiency": "경갑",
   "DND5E.ArmorMediumProficiency": "평갑",
-  "DND5E.AC": "AC"
-"DND5E.ATTACK": {
+  "DND5E.AC": "AC",
+  "DND5E.ATTACK": {
     "Title": {
       "one": "공격하기",
       "other": "공격"
@@ -1141,7 +1140,7 @@
   "DND5E.ConsumeRecharge": "재충전 자원을 소모하시겠습니까?",
   "DND5E.ConsumeScaling": "자원 성장",
   "DND5E.ConsumeScalingLabel": "자원 추가 소모",
-  "DND5E.ConsumeScalingTooltip": "체크 시, 추가 자원을 소모하여 주문시전 레벨을 높입니다."
+  "DND5E.ConsumeScalingTooltip": "체크 시, 추가 자원을 소모하여 주문시전 레벨을 높입니다.",
   "DND5E.CONSUMABLE": {
     "FIELDS": {
       "damage": {
@@ -5773,4 +5772,5 @@
       }
     }
   }
+}
 }
