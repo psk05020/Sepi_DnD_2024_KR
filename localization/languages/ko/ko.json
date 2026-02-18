@@ -201,8 +201,8 @@
         "Label": "안식처 행동"
       },
       "Reaction": {
-        "Header": "반응 행동",
-        "Label": "반응 행동"
+        "Header": "대응",
+        "Label": "대응"
       }
     },
     "Warning": {
