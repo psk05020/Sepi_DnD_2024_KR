@@ -4,7 +4,7 @@
 	"description": "D&D 2024판 한글화 모듈.",
 	"version":  "beta",
 	"library": "false",
-	"manifestPlusVersion": "1.2.0",
+	"manifestPlusVersion": "1.3.0",
 	"compatibility": {
 		"minimum": 13,
 		"verified": 13.347,
