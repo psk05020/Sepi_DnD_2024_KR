@@ -1,163 +1,163 @@
 {
-    "label": "Tables aléatoires",
-    "folders": {
-        "Bag of Tricks": "Sac à malices",
-        "Creating a Character": "Création de personnage",
-        "Item-Specific Tables": "Tables spécifiques aux objets",
-        "Magic Items": "Objets magiques",
-        "Monster Details": "Détails du monstre",
-        "Mysterious Deck": "Tarot mystérieux",
-        "Random Magic Item Rarity by Level": "Rareté aléatoire d'objet magique par niveau",
-        "Reincarnated Lineages": "Lignages réincarnés",
-        "Sentient Item Attributes": "Attributs des objets intelligents",
-        "Spells": "Sorts"
+  "label": "무작위 표",
+  "folders": {
+    "Bag of Tricks": "재주꾼 가방",
+    "Creating a Character": "캐릭터 생성",
+    "Item-Specific Tables": "아이템 전용 표",
+    "Magic Items": "마법 아이템",
+    "Monster Details": "몬스터 세부사항",
+    "Mysterious Deck": "삼라만상의 카드",
+    "Random Magic Item Rarity by Level": "레벨별 마법 아이템 등급 무작위 결정",
+    "Reincarnated Lineages": "환생 혈통",
+    "Sentient Item Attributes": "의식을 지닌 마법 아이템 속성",
+    "Spells": "주문"
+  },
+  "entries": {
+    "Alignment": {
+      "name": "성향",
+      "results": {
+        "1-15": "질서 선",
+        "16-35": "중립 선",
+        "36-50": "혼돈 선",
+        "51-63": "질서 중립",
+        "64-73": "중립",
+        "74-85": "혼돈 중립",
+        "86-89": "질서 악",
+        "90-96": "중립 악",
+        "97-100": "혼돈 악"
+      }
     },
-    "entries": {
-        "Alignment": {
-            "name": "Alignement",
-            "results": {
-                "1-15": "Loyal Bon",
-                "16-35": "Neutre Bon",
-                "36-50": "Chaotique Bon",
-                "51-63": "Loyal Neutre",
-                "64-73": "Neutre",
-                "74-85": "Chaotique Neutre",
-                "86-89": "Loyal Mauvais",
-                "90-96": "Neutre Mauvais",
-                "97-100": "Chaotique Mauvais"
-            }
+    "Ammunition of Slaying: Creature Type": {
+      "name": "척결의 탄환: 크리처 유형",
+      "results": {
+        "1-10": {
+          "description": "@UUID[Compendium.dnd5e.equipment24.Item.dmgSlayingAmmuni.ActiveEffect.4GIkMFeZQHZnfjvq]",
+          "range": {
+            "0": 1,
+            "1": 10
+          }
         },
-        "Ammunition of Slaying: Creature Type": {
-            "name": "Projectile tueur : Type de créature",
-            "results": {
-                "1-10": {
-                    "description": "@UUID[Compendium.dnd5e.equipment24.Item.dmgSlayingAmmuni.ActiveEffect.4GIkMFeZQHZnfjvq]",
-                    "range": {
-                        "0": 1,
-                        "1": 10
-                    }
-                },
-                "11-15": {
-                    "description": "@UUID[Compendium.dnd5e.equipment24.Item.dmgSlayingAmmuni.ActiveEffect.70bFeuTndNorjLBe]",
-                    "range": {
-                        "0": 16,
-                        "1": 20
-                    }
-                },
-                "16-20": {
-                    "description": "@UUID[Compendium.dnd5e.equipment24.Item.dmgSlayingAmmuni.ActiveEffect.o4aDyFCK0ekd9w8j]",
-                    "range": {
-                        "0": 21,
-                        "1": 25
-                    }
-                },
-                "21-25": {
-                    "description": "@UUID[Compendium.dnd5e.equipment24.Item.dmgSlayingAmmuni.ActiveEffect.AvExH8PizzJN0jSM]",
-                    "range": {
-                        "0": 11,
-                        "1": 15
-                    }
-                },
-                "26-35": {
-                    "description": "@UUID[Compendium.dnd5e.equipment24.Item.dmgSlayingAmmuni.ActiveEffect.VRMET3XgPTjBG91L]",
-                    "range": {
-                        "0": 26,
-                        "1": 35
-                    }
-                },
-                "36-45": {
-                    "description": "@UUID[Compendium.dnd5e.equipment24.Item.dmgSlayingAmmuni.ActiveEffect.ku2JX8rDga8GUBul]",
-                    "range": {
-                        "0": 36,
-                        "1": 45
-                    }
-                },
-                "46-50": {
-                    "description": "@UUID[Compendium.dnd5e.equipment24.Item.dmgSlayingAmmuni.ActiveEffect.ZssaQ07jWS7jFiej]",
-                    "range": {
-                        "0": 71,
-                        "1": 75
-                    }
-                },
-                "51-60": {
-                    "description": "@UUID[Compendium.dnd5e.equipment24.Item.dmgSlayingAmmuni.ActiveEffect.3JnW3nSByOVKu1LW]",
-                    "range": {
-                        "0": 46,
-                        "1": 55
-                    }
-                },
-                "61-70": {
-                    "description": "@UUID[Compendium.dnd5e.equipment24.Item.dmgSlayingAmmuni.ActiveEffect.ulADMO3yope7gn5R]",
-                    "range": {
-                        "0": 56,
-                        "1": 65
-                    }
-                },
-                "71-75": {
-                    "description": "@UUID[Compendium.dnd5e.equipment24.Item.dmgSlayingAmmuni.ActiveEffect.MKSR9zEe2s3qVILa]",
-                    "range": {
-                        "0": 66,
-                        "1": 70
-                    }
-                },
-                "76-80": {
-                    "description": "@UUID[Compendium.dnd5e.equipment24.Item.dmgSlayingAmmuni.ActiveEffect.cFNisqoGRSTHYDI4]",
-                    "range": {
-                        "0": 76,
-                        "1": 80
-                    }
-                },
-                "81-85": {
-                    "description": "@UUID[Compendium.dnd5e.equipment24.Item.dmgSlayingAmmuni.ActiveEffect.3mSYXVx987sezjuS]",
-                    "range": {
-                        "0": 96,
-                        "1": 100
-                    }
-                },
-                "86-90": {
-                    "description": "@UUID[Compendium.dnd5e.equipment24.Item.dmgSlayingAmmuni.ActiveEffect.BsXM9mDyGJ1R754S]",
-                    "range": {
-                        "0": 91,
-                        "1": 95
-                    }
-                },
-                "91-100": {
-                    "description": "@UUID[Compendium.dnd5e.equipment24.Item.dmgSlayingAmmuni.ActiveEffect.4NXhqKrNtDQjBcc8]",
-                    "range": {
-                        "0": 81,
-                        "1": 90
-                    }
-                }
-            }
+        "11-15": {
+          "description": "@UUID[Compendium.dnd5e.equipment24.Item.dmgSlayingAmmuni.ActiveEffect.70bFeuTndNorjLBe]",
+          "range": {
+            "0": 16,
+            "1": 20
+          }
         },
-        "Amulet of the Planes Destination": {
-            "name": "Amulette des plans : Destination",
+        "16-20": {
+          "description": "@UUID[Compendium.dnd5e.equipment24.Item.dmgSlayingAmmuni.ActiveEffect.o4aDyFCK0ekd9w8j]",
+          "range": {
+            "0": 21,
+            "1": 25
+          }
+        },
+        "21-25": {
+          "description": "@UUID[Compendium.dnd5e.equipment24.Item.dmgSlayingAmmuni.ActiveEffect.AvExH8PizzJN0jSM]",
+          "range": {
+            "0": 11,
+            "1": 15
+          }
+        },
+        "26-35": {
+          "description": "@UUID[Compendium.dnd5e.equipment24.Item.dmgSlayingAmmuni.ActiveEffect.VRMET3XgPTjBG91L]",
+          "range": {
+            "0": 26,
+            "1": 35
+          }
+        },
+        "36-45": {
+          "description": "@UUID[Compendium.dnd5e.equipment24.Item.dmgSlayingAmmuni.ActiveEffect.ku2JX8rDga8GUBul]",
+          "range": {
+            "0": 36,
+            "1": 45
+          }
+        },
+        "46-50": {
+          "description": "@UUID[Compendium.dnd5e.equipment24.Item.dmgSlayingAmmuni.ActiveEffect.ZssaQ07jWS7jFiej]",
+          "range": {
+            "0": 71,
+            "1": 75
+          }
+        },
+        "51-60": {
+          "description": "@UUID[Compendium.dnd5e.equipment24.Item.dmgSlayingAmmuni.ActiveEffect.3JnW3nSByOVKu1LW]",
+          "range": {
+            "0": 46,
+            "1": 55
+          }
+        },
+        "61-70": {
+          "description": "@UUID[Compendium.dnd5e.equipment24.Item.dmgSlayingAmmuni.ActiveEffect.ulADMO3yope7gn5R]",
+          "range": {
+            "0": 56,
+            "1": 65
+          }
+        },
+        "71-75": {
+          "description": "@UUID[Compendium.dnd5e.equipment24.Item.dmgSlayingAmmuni.ActiveEffect.MKSR9zEe2s3qVILa]",
+          "range": {
+            "0": 66,
+            "1": 70
+          }
+        },
+        "76-80": {
+          "description": "@UUID[Compendium.dnd5e.equipment24.Item.dmgSlayingAmmuni.ActiveEffect.cFNisqoGRSTHYDI4]",
+          "range": {
+            "0": 76,
+            "1": 80
+          }
+        },
+        "81-85": {
+          "description": "@UUID[Compendium.dnd5e.equipment24.Item.dmgSlayingAmmuni.ActiveEffect.3mSYXVx987sezjuS]",
+          "range": {
+            "0": 96,
+            "1": 100
+          }
+        },
+        "86-90": {
+          "description": "@UUID[Compendium.dnd5e.equipment24.Item.dmgSlayingAmmuni.ActiveEffect.BsXM9mDyGJ1R754S]",
+          "range": {
+            "0": 91,
+            "1": 95
+          }
+        },
+        "91-100": {
+          "description": "@UUID[Compendium.dnd5e.equipment24.Item.dmgSlayingAmmuni.ActiveEffect.4NXhqKrNtDQjBcc8]",
+          "range": {
+            "0": 81,
+            "1": 90
+          }
+        }
+      }
+    },
+    "Amulet of the Planes Destination": {
+        "name": "차원의 아뮬렛: 목적지",
             "results": {
-                "1-60": "Emplacement aléatoire sur le plan que vous aviez nommé",
-                "61-70": "Emplacement aléatoire sur un Plan Intérieur déterminé par le résultat de [[/r 1d6]] : 1, le Plan de l'Air ; 2, le Plan de la Terre ; 3, le Plan du Feu ; 4, le Plan de l'Eau ; 5, la Féerie ; et 6, la Gisombre",
-                "71-80": "Emplacement aléatoire sur un Plan Extérieur déterminé par le résultat de [[/r 1d8]] : 1, l'Arborée ; 2, l'Arcadie ; 3, les Terres des Bêtes ; 4, la Bytopie ; 5, l'Élysée ; 6, Méchanus ; 7, le Mont Céleste ; et 8, Ysgard",
-                "81-90": "Emplacement aléatoire sur un Plan Extérieur déterminé par le résultat de [[/r 1d8]] : 1, les Abysses ; 2 , l'Achéron ; 3, les Carcères ; 4, la Géhenne ; 5, Hadès ; 6, les Limbes ; 7, les Neuf Enfers ; et 8, le Pandémonium",
-                "91-100": "Emplacement aléatoire sur le Plan Astral"
+                "1-60": "명명한 차원의 무작위 위치",
+                "61-70": "내차원의 무작위 위치. [[/r 1d6]] 결과에 따라 결정: 1, 공기의 차원; 2, 땅의 차원; 3, 불의 차원; 4, 물의 차원; 5, 페이와일드; 6, 섀도펠",
+                "71-80": "외차원의 무작위 위치. [[/r 1d8]] 결과에 따라 결정: 1, 아보리아; 2, 아카디아; 3, 비스트랜드; 4, 바이토피아; 5, 엘리시움; 6, 메카누스; 7, 셀레스티아 산; 8, 아스가르드",
+                "81-90": "외차원의 무작위 위치. [[/r 1d8]] 결과에 따라 결정: 1, 어비스; 2, 아케론; 3, 카르케리; 4, 게헤나; 5, 하데스; 6, 림보; 7, 아홉 지옥; 8, 판데모니움",
+                "91-100": "아스트랄 차원의 무작위 위치"
             }
         },
         "Animated Object Catalysts": {
-            "name": "Catalyseurs d'animation",
-            "description": "<p>L'objet fut anime par…</p>",
+            "name": "움직이는 촉매",
+            "description": "<p>이 물체는 다음에 의해 생명력을 얻었습니다…</p>",
             "results": {
-                "1-1": "un Céleste ou un Fiélon qui s'en sert pour protéger ou tourmenter un mortel.",
-                "2-2": "un esprit qui en a pris possession.",
-                "3-3": "l'essence d'une personne transformée par une crapule surnaturelle.",
-                "4-4": "une Fée, dans le cadre d'un jeu ou de quelque manigance.",
-                "5-5": "le hasard, l'objet ayant acquis un semblant de vie après un siècle d'utilisation.",
-                "6-6": "un mage en quête d'un gardien ou d'un serviteur.",
-                "7-7": "la magie sauvage, un sort qui a mal tourné ou quelque Artefact chaotique.",
-                "8-8": "un mélange de magie et de technologie, comme l'alchimie ou une science venue d'ailleurs.",
-                "9-9": "la mélodie d'un instrument magique.",
-                "10-10": "la volonté d'une puissante entité psychique."
+                "1-1": "필멸자를 보호하거나 괴롭히기 위해 물체를 사용하는 천족 또는 마족.",
+                "2-2": "물체에 빙의한 영혼.",
+                "3-3": "초자연적인 악당에 의해 변형된 사람의 정수.",
+                "4-4": "장난이나 음모의 일환으로 마법을 부린 요정.",
+                "5-5": "우연히. 100년 동안 사용되면서 물체에 생명의 흔적이 깃듦.",
+                "6-6": "수호자나 하수인을 갈구하던 마법사.",
+                "7-7": "야생 마법, 폭주한 주문, 혹은 혼돈의 유물.",
+                "8-8": "연금술이나 외계 과학과 같은 마법과 기술의 혼합.",
+                "9-9": "마법 악기에서 흘러나온 멜로디.",
+                "10-10": "강력한 사이킥 존재의 의지."
             }
         },
         "Armor of Resistance Type": {
-            "name": "Armure de résistance : Type",
+            "name": "저항의 갑옷: 유형",
             "results": {
                 "1-1": {
                     "description": "@UUID[Compendium.dnd5e.equipment24.Item.dmgArmorOfResist.ActiveEffect.YreDFSu9z9mGCWt1]",
@@ -232,144 +232,144 @@
             }
         },
         "Bag of Beans Effect": {
-            "name": "Sac de haricots magiques : Effet",
+            "name": "마법 콩 주머니: 효과",
             "results": {
-                "1-1": "[[/r 5d4#Champignons]] champignons poussent. Si une créature mange un champignon, lancez [[/r 1d2#Effet secondaire du champignon]]{n'importe quel dé}. En cas de résultat impair, la créature doit réussir un jet de sauvegarde de [[/save ability=con dc=15]] sous peine de subir [[/damage 5d6 type=poison]]{5d6} dégâts de poison et l'état &Reference[Poisoned] pendant 1 heure. En cas de résultat pair, la créature reçoit [[/healing 5d6 type=temphp]]{5d6} points de vie temporaires qui persistent pendant 1 heure.",
-                "2-10": "Un geyser jaillit sur 9 m de haut en déversant de l'eau, de la bière, de la mayonnaise, du thé, du vinaigre, du vin ou de l'huile (au choix du MD) pendant [[/r 1d4#Durée du geyser (minutes)]] minutes.",
-                "11-20": "Un @UUID[Compendium.dnd5e.actors24.Actor.mmTreant00000000]{sylvanien} pousse. Lancez [[/r 1d2#Alignement du sylvanien]]{n'importe quel dé}. En cas de résultat impair, ce sylvanien est Chaotique Mauvais. En cas de résultat pair, il est Chaotique Bon.",
-                "21-30": "Une statue de pierre à votre effigie, animée, mais immobile, se dresse et profère des menaces verbales à votre encontre. Si vous partez et que d'autres s'en approchent, elle vous décrit comme le plus odieux des scélérats et intime aux nouveaux arrivants de vous pourchasser. Si vous êtes sur le même plan d'existence que la statue, elle sait exactement où vous êtes. La statue devient inanimée au bout de 24 heures.",
-                "31-40": "Un feu de camp aux flammes vertes s'allume ; il brûle pendant 24 heures (sauf si quelqu'un l'éteint).",
-                "41-50": "Trois @UUID[Compendium.dnd5e.actors24.Actor.mmShriekerFungus]{criards} poussent.",
-                "51-60": "[[/r 1d4 + 4#Crapauds rose vif]] @UUID[Compendium.dnd5e.actors24.Actor.mmFrog0000000000]{crapauds} rose vif émergent en rampant. Chaque fois qu'un crapaud est touché, il se transforme en un monstre de taille G ou inférieure au choix du MD, qui agit selon son alignement et sa nature. Le monstre persiste pendant 1 minute puis disparaît dans une bouffée de fumée rose vif.",
-                "61-70": "Une @UUID[Compendium.dnd5e.actors24.Actor.mmBulette0000000]{bulette} affamée surgit du sol et passe à l'attaque.",
-                "71-80": "Un arbre fruitier émerge. Il porte [[/r 1d10 + 20#Nombre de fruits]] fruits, dont [[/gmr 1d8#Fruits agissant comme potions]] agissent comme autant de potions déterminées aléatoirement. L'arbre disparaît au bout de 1 heure. Les fruits cueillis persistent et conservent leurs propriétés magiques pendant 30 jours.",
-                "81-90": "Un nid contenant [[/r 1d4 + 3#Œufs aux couleurs de l'arc-en-ciel]] œufs aux couleurs de l'arc-en-ciel apparaît. Toute créature qui mange un œuf effectue un jet de sauvegarde de [[/save ability=con dc=20]]. En cas de réussite, cette créature augmente sa valeur de caractéristique la plus basse de 1, de manière permanente, le hasard décidant de laquelle en cas d'égalité. En cas d'échec, la créature subit [[/damage 10d6 type=force]]{10d6} dégâts de force, provoqués par une explosion interne.",
-                "91-95": "Une pyramide à base carrée de 18 m de côté surgit du sol. À l'intérieur, une chambre funéraire abrite une @UUID[Compendium.dnd5e.actors24.Actor.mmMummy000000000]{momie}, une @UUID[Compendium.dnd5e.actors24.Actor.mmMummyLord00000]{momie auguste} ou quelque autre Mort-vivant choisi par le MD. Son sarcophage contient un trésor choisi par le MD.",
-                "96-100": "Un plant de haricot géant surgit, poussant jusqu'à une hauteur choisie par le MD. Le sommet mène là où le MD le décide : panorama superbe, château d'une géante des nuages, autre plan d'existence, etc."
+                "1-1": "[[/r 5d4#버섯]]개의 버섯이 자라납니다. 생명체가 버섯을 먹으면 [[/r 1d2#버섯의 부작용]]{아무 주사위}를 굴립니다. 홀수가 나오면 해당 크리처는 [[/save ability=con dc=15]] 내성 굴림에 성공해야 하며, 실패 시 [[/damage 5d6 type=poison]]{5d6}의 독 피해를 입고 1시간 동안 &Reference[Poisoned] 상태가 됩니다. 짝수가 나오면 해당 크리처는 1시간 동안 유지되는 [[/healing 5d6 type=temphp]]{5d6}의 임시 생명력을 얻습니다.",
+                "2-10": "9m 높이의 간헐천이 솟구쳐 물, 맥주, 마요네즈, 차, 식초, 와인, 혹은 기름(DM의 선택)을 [[/r 1d4#간헐천 지속 시간(분)]]분 동안 뿜어냅니다.",
+                "11-20": "한 그루의 @UUID[Compendium.dnd5e.actors24.Actor.mmTreant00000000]{트리언트}가 자라납니다. [[/r 1d2#트리언트 성향]]{아무 주사위}를 굴립니다. 홀수가 나오면 이 트리언트는 혼돈 악 성향이며, 짝수가 나오면 혼돈 선 성향입니다.",
+                "21-30": "당신의 모습을 본뜬 움직이지만 이동할 수 없는 석상이 나타나 당신에게 언어적 위협을 가합니다. 당신이 떠나고 다른 이들이 접근하면, 석상은 당신을 가장 가증스러운 악당으로 묘사하며 새로운 이들에게 당신을 추적하라고 종용합니다. 당신이 석상과 같은 차원에 있다면 석상은 당신의 위치를 정확히 압니다. 석상은 24시간 후에 생명력을 잃습니다.",
+                "31-40": "녹색 불꽃의 캠프파이어가 타오릅니다. 누군가 끄지 않는 한 24시간 동안 지속됩니다.",
+                "41-50": "세 마리의 @UUID[Compendium.dnd5e.actors24.Actor.mmShriekerFungus]{슈리커}가 자라납니다.",
+                "51-60": "[[/r 1d4 + 4#선홍색 개구리]]마리의 @UUID[Compendium.dnd5e.actors24.Actor.mmFrog0000000000]{개구리}가 선홍색 빛을 띠며 기어 나옵니다. 개구리가 만져질 때마다 DM이 선택한 대형 이하의 몬스터로 변신하며, 해당 생명체의 성향과 본성에 따라 행동합니다. 몬스터는 1분 동안 유지된 후 선홍색 연기와 함께 사라집니다.",
+                "61-70": "굶주린 @UUID[Compendium.dnd5e.actors24.Actor.mmBulette0000000]{불레트} 한 마리가 땅속에서 튀어나와 공격합니다.",
+                "71-80": "과일나무 한 그루가 솟아납니다. 나무에는 [[/r 1d10 + 20#과일 개수]]개의 과일이 열리며, 그중 [[/gmr 1d8#포션 효과 과일]]개의 과일은 무작위로 결정된 포션과 같은 효과를 냅니다. 나무는 1시간 후에 사라지지만, 딴 과일은 30일 동안 마법적 효능을 유지합니다.",
+                "81-90": "[[/r 1d4 + 3#무지개색 알]]개의 무지개색 알이 담긴 둥지가 나타납니다. 알을 먹는 생명체는 [[/save ability=con dc=20]] 내성 굴림을 수행해야 합니다. 성공 시 해당 생명체의 가장 낮은 능력치 하나가 영구적으로 1 증가하며(동점일 경우 무작위 결정), 실패 시 내부 폭발로 인해 [[/damage 10d6 type=force]]{10d6}의 힘 피해를 입습니다.",
+                "91-95": "한 변이 18m인 사각뿔 형태의 피라미드가 지면에서 솟아오릅니다. 내부 묘실에는 @UUID[Compendium.dnd5e.actors24.Actor.mmMummy000000000]{미라}, @UUID[Compendium.dnd5e.actors24.Actor.mmMummyLord00000]{미라 로드} 혹은 DM이 선택한 언데드가 들어있습니다. 석관 안에는 DM이 선택한 보물이 들어있습니다.",
+                "96-100": "거대한 콩나무가 자라나 DM이 결정한 높이까지 솟구칩니다. 그 꼭대기는 멋진 전망, 구름 거인의 성, 혹은 다른 차원 등 DM이 결정한 장소로 연결됩니다."
             }
         },
         "Bandit Motivations": {
-            "name": "Motivations des bandits",
-            "description": "<p>Le bandit…</p>",
+            "name": "도적의 동기",
+            "description": "<p>이 도적은…</p>",
             "results": {
-                "1-1": "appartient à une bande qui considère tout non-membre comme un ennemi.",
-                "2-2": "s'approprie le nécessaire pour survivre.",
-                "3-3": "est un ancien soldat abandonné par sa nation, qui s'arroge désormais ce qu'on lui avait promis.",
-                "4-4": "ne s'en prend qu'aux oppresseurs.",
-                "5-5": "sert à contrecœur un chef malfaisant.",
-                "6-6": "travaille secrètement pour un gouvernement ou un potentat local afin de semer le chaos."
+                "1-1": "조직원이 아닌 모든 이를 적으로 간주하는 무리에 속해 있습니다.",
+                "2-1": "생존에 필요한 것들을 강탈합니다.",
+                "3-1": "국가로부터 버림받은 전직 군인으로, 약속받았던 보상을 스스로 챙기려 합니다.",
+                "4-1": "압제자들만을 약탈합니다.",
+                "5-1": "악랄한 두목을 마지못해 섬깁니다.",
+                "6-1": "혼돈을 조장하기 위해 정부나 지역 군주를 위해 비밀리에 일합니다."
             }
         },
         "Candle of Invocation: Outer Plane Destination": {
-            "name": "Cierge d'invocation : Destination Plan extérieur",
+            "name": "기원의 양초: 외부 차원 목적지",
             "results": {
                 "1-5": {
-                    "description": "Abysses",
+                    "description": "어비스",
                     "range": {
                         "0": 1,
                         "1": 5
                     }
                 },
                 "55-59": {
-                    "description": "Géhenne",
+                    "description": "게헨나",
                     "range": {
                         "0": 47,
                         "1": 51
                     }
                 },
                 "6-10": {
-                    "description": "Achéron",
+                    "description": "아케론",
                     "range": {
                         "0": 6,
                         "1": 10
                     }
                 },
                 "60-64": {
-                    "description": "Hadès",
+                    "description": "하데스",
                     "range": {
                         "0": 52,
                         "1": 56
                     }
                 },
                 "11-17": {
-                    "description": "Arborée",
+                    "description": "아보리아",
                     "range": {
                         "0": 11,
                         "1": 17
                     }
                 },
                 "65-69": {
-                    "description": "Limbes",
+                    "description": "림보",
                     "range": {
                         "0": 57,
                         "1": 61
                     }
                 },
                 "18-25": {
-                    "description": "Arcadie",
+                    "description": "아카디아",
                     "range": {
                         "0": 18,
                         "1": 25
                     }
                 },
                 "70-77": {
-                    "description": "Méchanus",
+                    "description": "메카누스",
                     "range": {
                         "0": 62,
                         "1": 69
                     }
                 },
                 "26-33": {
-                    "description": "Terres des Bêtes",
+                    "description": "비스트랜드",
                     "range": {
                         "0": 88,
                         "1": 95
                     }
                 },
                 "78-85": {
-                    "description": "Mont Céleste",
+                    "description": "셀레스티아 산",
                     "range": {
                         "0": 70,
                         "1": 77
                     }
                 },
                 "34-41": {
-                    "description": "Bytopie",
+                    "description": "바이토피아",
                     "range": {
                         "0": 26,
                         "1": 33
                     }
                 },
                 "86-90": {
-                    "description": "Neuf Enfers",
+                    "description": "아홉 지옥",
                     "range": {
                         "0": 78,
                         "1": 82
                     }
                 },
                 "42-46": {
-                    "description": "Carcères",
+                    "description": "카르케리",
                     "range": {
                         "0": 34,
                         "1": 38
                     }
                 },
                 "91-95": {
-                    "description": "Pandémonium",
+                    "description": "판데모니움",
                     "range": {
                         "0": 83,
                         "1": 87
                     }
                 },
                 "47-54": {
-                    "description": "Élysée",
+                    "description": "엘리시움",
                     "range": {
                         "0": 39,
                         "1": 46
                     }
                 },
                 "96-100": {
-                    "description": "Ysgard",
+                    "description": "아스가르드",
                     "range": {
                         "0": 96,
                         "1": 100
