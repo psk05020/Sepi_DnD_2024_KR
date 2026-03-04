@@ -43,7 +43,7 @@
 "TYPES.Item.toolPl": "도구들",
 "TYPES.Item.weapon": "무기",
 "TYPES.Item.weaponPl": "무기들",
-"DND5E.title": "던전 앤 드래곤 5판",
+"DND5E.title": "던전 앤 용족 5판",
 "DND5E.AbbreviationCR": "도전지수",
 "DND5E.AbbreviationConc": "집중",
 "DND5E.AbbreviationDC": "난이도",
@@ -97,11 +97,11 @@
 "DND5E.ActionAbil": "능력 판정",
 "DND5E.ActionEnch": "부여 마법",
 "DND5E.ActionHeal": "치유",
-"DND5E.ActionMSAK": "근거리 주문 공격",
-"DND5E.ActionMWAK": "근거리 무기 공격",
+"DND5E.ActionMSAK": "근접 주문 공격",
+"DND5E.ActionMWAK": "근접 무기 공격",
 "DND5E.ActionOther": "기타",
-"DND5E.ActionRSAK": "원거리 주문 공격",
-"DND5E.ActionRWAK": "원거리 무기 공격",
+"DND5E.ActionRSAK": "장거리 주문 공격",
+"DND5E.ActionRWAK": "장거리 무기 공격",
 "DND5E.ActionSave": "내성 굴림",
 "DND5E.ActionSumm": "소환",
 "DND5E.ActionUtil": "유틸리티",
@@ -166,8 +166,8 @@
         "Header": "행동"
       },
       "BonusAction": {
-        "Header": "보조 행동",
-        "Label": "보조 행동"
+        "Header": "추가 행동",
+        "Label": "추가 행동"
       },
       "Crew": {
         "Header": "승무원 행동",
@@ -198,12 +198,12 @@
         }
       },
       "Lair": {
-        "Header": "안식처 행동",
-        "Label": "안식처 행동"
+        "Header": "본거지 행동",
+        "Label": "본거지 행동"
       },
       "Reaction": {
-        "Header": "대응",
-        "Label": "대응"
+        "Header": "반응행동",
+        "Label": "반응행동"
       }
     },
     "Warning": {
@@ -514,7 +514,7 @@
           "label": "아이템 유형"
         }
       },
-      "Hint": "플레이어에게 하나 이상의 레벨에서 캐릭터를 위해 선택할 수 있는 아이템(장비, 특성, 재주, 주문 등)의 선택지를 제공합니다.",
+      "Hint": "플레이어에게 하나 이상의 레벨에서 캐릭터를 위해 선택할 수 있는 아이템(장비, 요소, 재주, 주문 등)의 선택지를 제공합니다.",
       "Replacement": {
         "None": "교체 없음",
         "Title": "교체"
@@ -552,7 +552,7 @@
         }
       },
       "Details": "성장 세부 사항",
-      "Hint": "클래스 레벨이 올라감에 따라 수치가 변화하며, 판정 공식에서 사용할 수 있는 고유한 값입니다(예: 수도사의 무예 주사위).",
+      "Hint": "클래스 레벨이 올라감에 따라 수치가 변화하며, 판정 공식에서 사용할 수 있는 고유한 값입니다(예: 몽크의 무술 주사위).",
       "Title": "척도 값",
       "Type": {
         "CR": {
@@ -561,8 +561,8 @@
               "label": "도전지수"
             }
           },
-          "Hint": "야수 형태와 같은 특성에서 크리처의 도전지수(CR) 제한을 나타낼 때 사용합니다.",
-          "Label": "위협 등급"
+          "Hint": "야생 변신과 같은 요소에서 크리쳐의 도전지수(CR) 제한을 나타낼 때 사용합니다.",
+          "Label": "도전지수"
         },
         "Dice": {
           "FIELDS": {
@@ -573,12 +573,12 @@
               "label": "개수"
             }
           },
-          "Hint": "바드의 격려, 암습, 혹은 우월성 주사위와 같은 주사위 값에 사용합니다.",
+          "Hint": "바드의 고양감, 암습, 혹은 우월성 주사위와 같은 주사위 값에 사용합니다.",
           "Identifier": "현재 레벨에 해당하는 척도 값은 다음 공식을 통해 사용할 수 있습니다:<br><copyable-text>@scale.{class}.{identifier}</copyable-text> - 전체 공식 (예: <code>4d6</code>)<br><copyable-text>@scale.{class}.{identifier}.die</copyable-text> - 주사위 규격 (예: <code>d6</code>)<br><copyable-text>@scale.{class}.{identifier}.number</copyable-text> - 주사위 개수 (예: <code>4</code>)<br><copyable-text>@scale.{class}.{identifier}.faces</copyable-text> - 주사위 면수 (예: <code>6</code>)",
           "Label": "주사위"
         },
         "Distance": {
-          "Hint": "비무장 속도 증가나 보호의 오라 반경과 같이 거리를 나타내는 수치에 사용합니다.",
+          "Hint": "비무장 속도 증가나 보호의 오오라 반경과 같이 거리를 나타내는 수치에 사용합니다.",
           "Label": "거리"
         },
         "Number": {
@@ -602,8 +602,8 @@
     },
     "Size": {
       "DefaultHint": {
-        "Multiple": "{sizes} 중에서 체격을 선택하세요.",
-        "Single": "당신의 체격은 {size}입니다."
+        "Multiple": "{sizes} 중에서 크기을 선택하세요.",
+        "Single": "당신의 크기은 {size}입니다."
       },
       "FIELDS": {
         "sizes": {
@@ -652,19 +652,19 @@
           "Label": "기본"
         },
         "Expertise": {
-          "Hint": "이미 숙련된 특성에서 통달을 획득합니다.",
-          "Label": "통달"
+          "Hint": "이미 숙련된 특성에서 숙달을 획득합니다.",
+          "Label": "숙달"
         },
         "Force": {
-          "Hint": "이전 숙련 레벨과 상관없이 해당 특성에서 통달을 획득합니다.",
-          "Label": "강제 통달"
+          "Hint": "이전 숙련 레벨과 상관없이 해당 특성에서 숙달을 획득합니다.",
+          "Label": "강제 숙달"
         },
         "Mastery": {
           "Hint": "이미 숙련된 무기의 무기 전문 속성을 획득합니다.",
           "Label": "무기 전문화"
         },
         "Upgrade": {
-          "Hint": "특성 숙련을 획득합니다. 이미 숙련되어 있다면 대신 통달을 획득합니다.",
+          "Hint": "특성 숙련을 획득합니다. 이미 숙련되어 있다면 대신 숙달을 획득합니다.",
           "Label": "업그레이드"
         }
       },
@@ -766,10 +766,10 @@
   "DND5E.ArmorClassEquipment": "장착 중인 방어구",
   "DND5E.ArmorClassFlat": "기본",
   "DND5E.ArmorClassUnarmored": "비무장 방어",
-  "DND5E.ArmorClassNatural": "자연 갑옷",
-  "DND5E.ArmorClassMage": "마법사의 갑옷",
+  "DND5E.ArmorClassNatural": "자연학 갑옷",
+  "DND5E.ArmorClassMage": "마법 갑주",
   "DND5E.ArmorClassMotionless": "움직임 제한 시 AC",
-  "DND5E.ArmorClassDraconic": "드래곤 저항",
+  "DND5E.ArmorClassDraconic": "용족 저항",
   "DND5E.ArmorClassUnarmoredMonk": "비무장 방어 (몽크)",
   "DND5E.ArmorClassUnarmoredBarbarian": "비무장 방어 (바바리안)",
   "DND5E.ArmorClassUnarmoredBard": "비무장 방어 (바드)",
@@ -812,7 +812,7 @@
           "label": "공격 유형",
           "value": {
             "label": "공격 유형",
-            "hint": "근거리 공격입니까, 원거리 공격입니까?"
+            "hint": "근접 공격입니까, 장거리 공격입니까?"
           },
           "classification": {
             "label": "공격 분류",
@@ -839,8 +839,8 @@
       }
     },
     "Attack": {
-      "mwak": "근거리 공격",
-      "rwak": "원거리 공격"
+      "mwak": "근접 공격",
+      "rwak": "장거리 공격"
     },
     "Classification": {
       "Spell": "주문",
@@ -854,18 +854,18 @@
       "Thrown": "투척",
       "ThrownOffhand": "보조 손 투척",
       "TwoHanded": "양손",
-      "Ranged": "원거리"
+      "Ranged": "장거리"
     },
     "Type": {
-      "Melee": "근거리",
-      "Ranged": "원거리"
+      "Melee": "근접",
+      "Ranged": "장거리"
 },
     "Warning": {
       "NoQuantity": "수량이 0인 무기로 공격을 시도했습니다."
     },
     "Weapon": {
-      "Melee": "근거리 무기",
-      "Ranged": "원거리 무기"
+      "Melee": "근접 무기",
+      "Ranged": "장거리 무기"
     },
     "Formatted": {
       "2024": "{type}",
@@ -903,7 +903,7 @@
   "DND5E.BiopgrahyPublicEdit": "공개 프로필 수정",
   "DND5E.Bonds": "유대",
   "DND5E.Bonus": "보너스",
-  "DND5E.BonusAction": "보조 행동",
+  "DND5E.BonusAction": "추가 행동",
   "DND5E.BonusActionAbbr": "보행",
   "DND5E.BonusAttack": "명중 보너스",
   "DND5E.BonusDamage": "피해 보너스",
@@ -1087,9 +1087,9 @@
   "DND5E.ContextMenuActionDisable": "비활성화",
   "DND5E.ContextMenuActionView": "보기",
   "DND5E.Contiguous": "인접함",
-  "DND5E.ConBlinded": "실명",
+  "DND5E.ConBlinded": "장님",
   "DND5E.ConCharmed": "매혹",
-  "DND5E.ConDeafened": "실청",
+  "DND5E.ConDeafened": "귀머거리",
   "DND5E.ConDiseased": "질병",
   "DND5E.ConExhaustion": "탈진",
   "DND5E.ConFrightened": "공포",
@@ -1102,12 +1102,12 @@
   "DND5E.ConPoisoned": "중독",
   "DND5E.ConProne": "넘어짐",
   "DND5E.ConRestrained": "포박",
-  "DND5E.ConStunned": "기절",
+  "DND5E.ConStunned": "충격",
   "DND5E.ConUnconscious": "무의식",
   "DND5E.Concentration": "집중",
   "DND5E.ConcentrationAbbr": "집",
   "DND5E.ConcentrationBreak": "집중 깨뜨리기",
-  "DND5E.ConcentrationBreakWarning": "다른 크리처에게 활성화된 효과의 집중을 깨뜨리려면 활성화된 DM이 필요합니다.",
+  "DND5E.ConcentrationBreakWarning": "다른 크리쳐에게 활성화된 효과의 집중을 깨뜨리려면 활성화된 DM이 필요합니다.",
   "DND5E.ConcentrationBonus": "집중 보너스",
   "DND5E.ConcentrationDuration": "집중, 최대 {duration}",
   "DND5E.ConcentratingOn": "당신은 현재 {type} '{name}'의 효과에 집중하고 있습니다.",
@@ -1204,7 +1204,7 @@
         "Label": "마법봉"
       },
       "Wondrous": {
-        "Label": "경이 물품"
+        "Label": "경이 물건"
       }
     }
   },
@@ -1368,38 +1368,38 @@
   "DND5E.CoverTotal": "완전 엄폐",
   "DND5E.Cost": "비용",
   "DND5E.CostGP": "비용 (gp)",
-  "DND5E.CreatureAberration": "이형체",
-  "DND5E.CreatureAberrationPl": "이형체",
+  "DND5E.CreatureAberration": "기괴체",
+  "DND5E.CreatureAberrationPl": "기괴체",
   "DND5E.CreatureBeast": "야수",
   "DND5E.CreatureBeastPl": "야수",
-  "DND5E.CreatureCelestial": "천족",
-  "DND5E.CreatureCelestialPl": "천족",
-  "DND5E.CreatureConstruct": "인공물",
-  "DND5E.CreatureConstructPl": "인공물",
-  "DND5E.CreatureDragon": "드래곤",
-  "DND5E.CreatureDragonPl": "드래곤",
-  "DND5E.CreatureElemental": "정령",
-  "DND5E.CreatureElementalPl": "정령",
+  "DND5E.CreatureCelestial": "천상체",
+  "DND5E.CreatureCelestialPl": "천상체",
+  "DND5E.CreatureConstruct": "구조물",
+  "DND5E.CreatureConstructPl": "구조물",
+  "DND5E.CreatureDragon": "용족",
+  "DND5E.CreatureDragonPl": "용족",
+  "DND5E.CreatureElemental": "원소",
+  "DND5E.CreatureElementalPl": "원소",
   "DND5E.CreatureFey": "요정",
   "DND5E.CreatureFeyPl": "요정",
-  "DND5E.CreatureFiend": "마족",
-  "DND5E.CreatureFiendPl": "마족",
+  "DND5E.CreatureFiend": "악마",
+  "DND5E.CreatureFiendPl": "악마",
   "DND5E.CreatureGiant": "거인",
   "DND5E.CreatureGiantPl": "거인",
   "DND5E.CreatureHumanoid": "인간형",
   "DND5E.CreatureHumanoidPl": "인간형",
-  "DND5E.CreatureMonstrosity": "괴물",
-  "DND5E.CreatureMonstrosityPl": "괴물",
-  "DND5E.CreatureOoze": "점액",
-  "DND5E.CreatureOozePl": "점액",
+  "DND5E.CreatureMonstrosity": "괴물류",
+  "DND5E.CreatureMonstrosityPl": "괴물류",
+  "DND5E.CreatureOoze": "점액류",
+  "DND5E.CreatureOozePl": "점액류",
   "DND5E.CreaturePlant": "식물",
   "DND5E.CreaturePlantPl": "식물",
   "DND5E.CreatureType": " 유형",
-  "DND5E.CreatureTypeTitle": "크리처 유형",
+  "DND5E.CreatureTypeTitle": "크리쳐 유형",
   "DND5E.CreatureSwarm": "무리",
   "DND5E.CreatureSwarmSize": "무리 크기",
   "DND5E.CreatureSwarmPhrase": "{type}의 {size} 무리",
-  "DND5E.CreatureTypeConfig": "크리처 유형 설정",
+  "DND5E.CreatureTypeConfig": "크리쳐 유형 설정",
   "DND5E.CreatureTypeSelectorCustom": "사용자 정의 유형",
   "DND5E.CreatureTypeSelectorSubtype": "하위 유형",
   "DND5E.CreatureUndead": "언데드",
@@ -1446,7 +1446,7 @@
         "critical": {
           "allow": {
             "label": "치명타 허용",
-            "hint": "이 크리처가 치명타 피해를 입힐 수 있습니까?"
+            "hint": "이 크리쳐가 치명타 피해를 입힐 수 있습니까?"
           },
           "bonus": {
             "label": "보너스 치명타 피해",
@@ -1519,7 +1519,7 @@
       "HalfCantrip": "소마법 성장 (절반)",
       "WholeCantrip": "소마법 성장"
     },
-    "Hint": "공격이나 내성 없이 크리처에게 가해지는 피해입니다."
+    "Hint": "공격이나 내성 없이 크리쳐에게 가해지는 피해입니다."
   },
   "DND5E.DamImm": "피해 면역",
   "DND5E.DamMod": "피해 수정",
@@ -1621,7 +1621,7 @@
         "label": "지속시간",
         "concentration": {
           "label": "집중",
-          "hint": "활동이 활성화된 동안 크리처가 집중을 유지해야 합니다."
+          "hint": "활동이 활성화된 동안 크리쳐가 집중을 유지해야 합니다."
         },
         "override": {
           "label": "지속시간 덮어쓰기",
@@ -1726,7 +1726,7 @@
           },
           "item": {
             "label": "추가 아이템",
-            "hint": "크리처의 아이템에 마법이 부여될 때 해당 크리처에게 추가되고, 마법이 해제될 때 함께 제거되는 추가 아이템들입니다."
+            "hint": "크리쳐의 아이템에 마법이 부여될 때 해당 크리쳐에게 추가되고, 마법이 해제될 때 함께 제거되는 추가 아이템들입니다."
           }
         }
       }
@@ -1804,7 +1804,7 @@
   "DND5E.EquipmentHeavy": "중갑",
   "DND5E.EquipmentLight": "경갑",
   "DND5E.EquipmentMedium": "평갑",
-  "DND5E.EquipmentNatural": "자연 방어구",
+  "DND5E.EquipmentNatural": "자연학 방어구",
   "DND5E.EquipmentShield": "방패",
   "DND5E.EquipmentShieldProficiency": "방패",
   "DND5E.Equipped": "장착됨",
@@ -1820,14 +1820,14 @@
     "Background": "배경 특징",
     "Class": {
       "Label": "클래스 특징",
-      "ArcaneShot": "비전 사격",
+      "ArcaneShot": "비전학 사격",
       "ArtificerInfusion": "아티피서의 주입",
-      "ChannelDivinity": "신성한 권능",
-      "DefensiveTactic": "방어 전술",
-      "EldritchInvocation": "섬뜩한 기원",
-      "ElementalDiscipline": "원소 규율",
-      "FightingStyle": "전투 기법",
-      "HuntersPrey": "사냥꾼의 먹잇감",
+      "ChannelDivinity": "신성 변환",
+      "DefensiveTactic": "방어적 전술",
+      "EldritchInvocation": "섬뜩한 영창",
+      "ElementalDiscipline": "원소 기공",
+      "FightingStyle": "전투 유파",
+      "HuntersPrey": "사냥꾼의 사냥감",
       "Ki": "몽크의 몰입 능력",
       "Maneuver": "기교",
       "Metamagic": "변형 마법 옵션",
@@ -1835,20 +1835,20 @@
       "PactBoon": "계약의 은혜",
       "PsionicPower": "초능력",
       "Rune": "룬",
-      "SuperiorHuntersDefense": "상급 사냥꾼의 방어",
+      "SuperiorHuntersDefense": "우월한 사냥꾼의 방어",
       "ArtificerPlan": "아티피서의 설계"
     },
     "Feat": {
       "Label": "재주",
       "EpicBoon": "장엄한 은혜 재주",
-      "FightingStyle": "전투 기법 재주",
+      "FightingStyle": "전투 유파 재주",
       "General": "일반 재주",
       "Origin": "기원 재주"
     },
     "Monster": "몬스터 특성",
     "Species": "종족 특성",
     "SupernaturalGift": {
-      "Label": "초자연적 선물",
+      "Label": "초자연학적 능력",
       "Blessing": "축복",
       "Charm": "마력",
       "EpicBoon": "장엄한 은혜"
@@ -1860,12 +1860,12 @@
   },
 "DND5E.Focus": {
     "Label": "주문 시전 매개체",
-    "Arcane": "비전 매개체",
+    "Arcane": "비전학 매개체",
     "Druidic": "드루이드 매개체",
     "Holy": "성기물"
   },
   "DND5E.Loot.Art": "예술품",
-  "DND5E.Loot.Gear": "모험가 장비",
+  "DND5E.Loot.Gear": "모험도구",
   "DND5E.Loot.Gem": "보석",
   "DND5E.Loot.Junk": "잡동사니",
   "DND5E.Loot.Material": "재료",
@@ -1894,25 +1894,25 @@
   "DND5E.Encumbrance": "하중",
   "DND5E.ItemRarityCommon": "일반",
   "DND5E.ItemRarityMundane": "평범",
-  "DND5E.ItemRarityUncommon": "우수",
-  "DND5E.ItemRarityRare": "희귀",
-  "DND5E.ItemRarityVeryRare": "매우 희귀",
+  "DND5E.ItemRarityUncommon": "비범",
+  "DND5E.ItemRarityRare": "고급",
+  "DND5E.ItemRarityVeryRare": "희귀",
   "DND5E.ItemRarityLegendary": "전설",
   "DND5E.ItemRarityArtifact": "유물",
   "DND5E.Eyes": "눈 색깔",
   "DND5E.Faith": "신앙",
-  "DND5E.FeatureActive": "활성 특징",
-  "DND5E.FeatureAdd": "특징 추가",
-  "DND5E.FeatureAttack": "공격 특징",
-  "DND5E.FeaturePassive": "지속 특징",
+  "DND5E.FeatureActive": "활성 요소",
+  "DND5E.FeatureAdd": "요소 추가",
+  "DND5E.FeatureAttack": "공격 요소",
+  "DND5E.FeaturePassive": "지속 요소",
   "DND5E.FeatureRechargeOn": "재충전 기준",
   "DND5E.FeatureRechargeResult": "1d6 결과",
-  "DND5E.FeatureSearch": "특징 검색",
-  "DND5E.FeatureUsage": "특징 사용",
-  "DND5E.Features": "특징",
-  "DND5E.FeaturesBackground": "배경 특징",
-  "DND5E.FeaturesClass": "{class} 특징",
-  "DND5E.FeaturesOther": "기타 특징",
+  "DND5E.FeatureSearch": "요소 검색",
+  "DND5E.FeatureUsage": "요소 사용",
+  "DND5E.Features": "요소",
+  "DND5E.FeaturesBackground": "배경 요소",
+  "DND5E.FeaturesClass": "{class} 요소",
+  "DND5E.FeaturesOther": "기타 요소",
   "DND5E.Feats": "재능",
   "DND5E.FeetAbbr": "ft.",
   "DND5E.Filter": "필터",
@@ -1925,7 +1925,7 @@
   "DND5E.FLAGS": {
     "EnhancedDualWielding": {
       "Name": "강화된 쌍수 전투",
-      "Hint": "양손 속성이 없는 근거리 무기를 사용할 때 보조 행동으로 추가 공격을 허용합니다."
+      "Hint": "양손 속성이 없는 근접 무기를 사용할 때 추가 행동으로 추가 공격을 허용합니다."
     }
   },
   "DND5E.FlagsInstructions": "D&D 5판 시스템의 작동 방식을 조정하는 캐릭터의 특성 및 특징들을 설정합니다.",
@@ -1933,18 +1933,18 @@
   "DND5E.FlagsTitle": "특수 특성 설정",
   "DND5E.FlagsDiamondSoul": "금강혼",
   "DND5E.FlagsDiamondSoulHint": "모든 내성 굴림에 숙련을 부여합니다.",
-  "DND5E.FlagsPowerfulBuild": "건장한 체격",
+  "DND5E.FlagsPowerfulBuild": "건장한 크기",
   "DND5E.FlagsPowerfulBuildHint": "운반 중량을 두 배로 늘립니다.",
   "DND5E.FlagsElvenAccuracy": "엘프의 정밀함",
   "DND5E.FlagsElvenAccuracyHint": "민첩, 지능, 지혜, 매력 판정에 이점이 있을 때 주사위 하나를 다시 굴릴 수 있습니다.",
   "DND5E.FlagsHalflingLucky": "하플링의 행운",
   "DND5E.FlagsHalflingLuckyHint": "명중 굴림, 능력 판정, 내성 굴림에서 1이 나오면 다시 굴릴 수 있습니다.",
   "DND5E.FlagsAlert": "경계 (재주)",
-  "DND5E.FlagsAlertHint": "선제권 굴림에 숙련을 부여합니다.",
+  "DND5E.FlagsAlertHint": "우선권 굴림에 숙련을 부여합니다.",
   "DND5E.FlagsJOAT": "팔방미인",
   "DND5E.FlagsJOATHint": "숙련 보너스가 없는 모든 능력 판정에 숙련 보너스의 절반을 더합니다.",
   "DND5E.FlagsObservant": "관찰력 (재주)",
-  "DND5E.FlagsObservantHint": "상시 지혜(포착) 및 상시 지능(조사)에 +5 보너스를 부여합니다.",
+  "DND5E.FlagsObservantHint": "상시 지혜(감지) 및 상시 지능(수사)에 +5 보너스를 부여합니다.",
   "DND5E.FlagsTavernBrawler": "술집 싸움꾼 (재주)",
   "DND5E.FlagsTavernBrawlerHint": "임시 무기에 숙련을 부여합니다.",
   "DND5E.FlagsReliableTalent": "믿음직한 재능",
@@ -1955,8 +1955,8 @@
   "DND5E.FlagsWeaponCritThresholdHint": "치명타 범위를 확장합니다 (예: 치명타 강화 등).",
   "DND5E.FlagsSpellCritThreshold": "주문 치명타 임계치",
   "DND5E.FlagsSpellCritThresholdHint": "공격 주문의 치명타 범위를 확장합니다.",
-  "DND5E.FlagsMeleeCriticalDice": "근거리 치명타 피해 주사위",
-  "DND5E.FlagsMeleeCriticalDiceHint": "근거리 무기 치명타 시 추가되는 피해 주사위 개수입니다.",
+  "DND5E.FlagsMeleeCriticalDice": "근접 치명타 피해 주사위",
+  "DND5E.FlagsMeleeCriticalDiceHint": "근접 무기 치명타 시 추가되는 피해 주사위 개수입니다.",
   "DND5E.Flat": "고정값",
   "DND5E.Formula": "공식",
   "DND5E.FormulaMalformedError": "{name}의 {property} 공식을 준비하는 중 문제가 발생했습니다.",
@@ -1969,7 +1969,7 @@
   "DND5E.GroupSummaryEmpty": "빈 그룹",
   "DND5E.GroupControls": "제어",
 "DND5E.Group": {
-    "Challenge": "위협 등급",
+    "Challenge": "도전지수",
     "Member": {
       "one": "구성원",
       "other": "구성원"
@@ -1986,7 +1986,7 @@
     "Action": {
       "Remove": "구성원 제거",
       "View": "구성원 보기",
-      "ChangePace": "이동 속도 변경",
+      "ChangePace": "이동속도 변경",
       "Inventory": {
         "Group": "그룹 인벤토리 보기",
         "Vehicle": "탈것 인벤토리 보기"
@@ -2071,7 +2071,7 @@
         }
       }
     },
-    "Hint": "크리처를 치유합니다."
+    "Hint": "크리쳐를 치유합니다."
   },
 "DND5E.Healing": "HP 회복",
   "DND5E.HealingRoll": "치유 굴림",
@@ -2108,12 +2108,12 @@
   "DND5E.IdentifierError": "식별자에는 영문자(a-z), 숫자(0-9), 하이픈(-), 밑줄(_)만 포함할 수 있습니다.",
   "DND5E.Identify": "식별",
   "DND5E.Immunities": "면역",
-  "DND5E.Initiative": "선제권",
-  "DND5E.InitiativeAbbr": "선제권",
-  "DND5E.InitiativeBonus": "선제권 보너스",
-  "DND5E.InitiativeRoll": "선제권 굴림",
-  "DND5E.InitiativeConfig": "선제권 설정",
-  "DND5E.InitiativeConfigHint": "이 캐릭터에게 적용되는 선제권 수정치 및 보너스를 설정합니다.",
+  "DND5E.Initiative": "우선권",
+  "DND5E.InitiativeAbbr": "우선권",
+  "DND5E.InitiativeBonus": "우선권 보너스",
+  "DND5E.InitiativeRoll": "우선권 굴림",
+  "DND5E.InitiativeConfig": "우선권 설정",
+  "DND5E.InitiativeConfigHint": "이 캐릭터에게 적용되는 우선권 수정치 및 보너스를 설정합니다.",
   "DND5E.Inspiration": "영감",
   "DND5E.Inventory": "소지품",
   "DND5E.InventorySearch": "소지품 검색",
@@ -2242,7 +2242,7 @@
   "DND5E.OtherFormula": "기타 공식",
   "DND5E.PactMagic": "계약 마법",
   "DND5E.Passive": "지속",
-  "DND5E.PassivePerception": "상시 지혜(포착)",
+  "DND5E.PassivePerception": "상시 지혜(감지)",
   "DND5E.Period": "기간",
   "DND5E.PersonalityTraits": "성격적 특성",
   "DND5E.Portrait": "초상화",
@@ -2295,7 +2295,7 @@
         "label": "사거리",
         "long": {
           "label": "최대 사거리",
-          "hint": "무기에 설정된 원거리 공격의 최대 사거리입니다."
+          "hint": "무기에 설정된 장거리 공격의 최대 사거리입니다."
         },
         "override": {
           "label": "사거리 대체",
@@ -2329,9 +2329,9 @@
   "DND5E.RangeNormal": "일반 사거리",
   "DND5E.RangeUnits": "사거리 유형 및 단위",
   "DND5E.Rarity": "등급",
-  "DND5E.Reaction": "대응",
-  "DND5E.ReactionAbbr": "대응",
-  "DND5E.ReactionPl": "대응",
+  "DND5E.Reaction": "반응행동",
+  "DND5E.ReactionAbbr": "반응행동",
+  "DND5E.ReactionPl": "반응행동",
   "DND5E.Recharge": "재충전",
   "DND5E.Recovery": "회복",
   "DND5E.RecoveryFormula": "회복 공식",
@@ -2435,11 +2435,11 @@
   "DND5E.SensesConfig": "감각 설정",
   "DND5E.SensesConfigHint": "이 캐릭터가 보유한 특수 지각 능력을 설정합니다.",
   "DND5E.SenseDarkvision": "암시야",
-  "DND5E.SenseBlindsight": "맹시야",
+  "DND5E.SenseBlindsight": "맹안시야",
   "DND5E.SenseTremorsense": "진동 감지",
   "DND5E.SenseTruesight": "진시야",
   "DND5E.SenseUnits": "단위",
-  "DND5E.SenseSpecial": "상시 포착",
+  "DND5E.SenseSpecial": "상시 감지",
   "DND5E.Shape": "형태",
   "DND5E.SheetModeEdit": "편집 모드",
   "DND5E.SheetModePlay": "플레이 모드",
@@ -2452,15 +2452,15 @@
   "DND5E.ScalingMode": "성장 모드",
   "DND5E.ScalingValue": "성장 수치",
   "DND5E.School": "학파",
-  "DND5E.SchoolAbj": "방호술",
-  "DND5E.SchoolCon": "소환술",
-  "DND5E.SchoolDiv": "예지술",
-  "DND5E.SchoolEnc": "환혹술",
-  "DND5E.SchoolEvo": "방출술",
-  "DND5E.SchoolIll": "환영술",
-  "DND5E.SchoolNec": "사령술",
-  "DND5E.SchoolTrs": "변환술",
-  "DND5E.Size": "체격",
+  "DND5E.SchoolAbj": "방호계",
+  "DND5E.SchoolCon": "조형계",
+  "DND5E.SchoolDiv": "예지계",
+  "DND5E.SchoolEnc": "환혹계",
+  "DND5E.SchoolEvo": "방출계",
+  "DND5E.SchoolIll": "환영계",
+  "DND5E.SchoolNec": "사령계",
+  "DND5E.SchoolTrs": "변환계",
+  "DND5E.Size": "크기",
   "DND5E.SizeGargantuan": "초대형",
   "DND5E.SizeGargantuanAbbr": "초대",
   "DND5E.SizeHuge": "거대",
@@ -2477,20 +2477,20 @@
   "DND5E.Skills": "기술",
   "DND5E.SkillAcr": "곡예",
   "DND5E.SkillAni": "동물 조련",
-  "DND5E.SkillArc": "비전",
+  "DND5E.SkillArc": "비전학",
   "DND5E.SkillAth": "운동",
   "DND5E.SkillDec": "기만",
-  "DND5E.SkillHis": "역사",
+  "DND5E.SkillHis": "역사학",
   "DND5E.SkillIns": "통찰",
-  "DND5E.SkillInv": "조사",
+  "DND5E.SkillInv": "수사",
   "DND5E.SkillItm": "위협",
   "DND5E.SkillMed": "의학",
-  "DND5E.SkillNat": "자연",
+  "DND5E.SkillNat": "자연학",
   "DND5E.SkillPer": "설득",
-  "DND5E.SkillPrc": "포착",
+  "DND5E.SkillPrc": "감지",
   "DND5E.SkillPrf": "공연",
   "DND5E.SkillRel": "종교",
-  "DND5E.SkillSlt": "손재주",
+  "DND5E.SkillSlt": "손속임",
   "DND5E.SkillSte": "은신",
   "DND5E.SkillSur": "생존",
   "DND5E.SkillPromptTitle": "{ability} ({skill}) 판정",
@@ -2623,7 +2623,7 @@
   "DND5E.SpellProgLeveled": "레벨별 성장 공식",
   "DND5E.SpellProgOverride": "무시",
   "DND5E.SpellProgPact": "계약 마법",
-  "DND5E.SpellProgThird": "서드캐스터 (비술 기사, 비전 괴도 등)",
+  "DND5E.SpellProgThird": "서드캐스터 (비술 기사, 비전학 괴도 등)",
   "DND5E.SpellProgression": "주문 슬롯 획득 방식",
   "DND5E.SpellsSearch": "주문 검색",
   "DND5E.SpellSchool": "마법 학파",
@@ -2691,15 +2691,15 @@
       "bonuses": {
         "ac": {
           "label": "방어도 보너스",
-          "hint": "소환된 크리처의 스텟 블록에 명시된 수치에 추가될 AC 보너스입니다."
+          "hint": "소환된 크리쳐의 스텟 블록에 명시된 수치에 추가될 AC 보너스입니다."
         },
         "attackDamage": {
           "label": "공격 피해 보너스",
-          "hint": "크리처의 공격으로 가하는 추가 피해입니다."
+          "hint": "크리쳐의 공격으로 가하는 추가 피해입니다."
         },
         "hd": {
           "label": "보너스 히트 다이스",
-          "hint": "소환된 크리처의 스텟 블록에 명시된 히트 다이스 외에 추가로 더해질 주사위입니다. NPC 유형의 캐릭터를 소환할 때만 적용됩니다."
+          "hint": "소환된 크리쳐의 스텟 블록에 명시된 히트 다이스 외에 추가로 더해질 주사위입니다. NPC 유형의 캐릭터를 소환할 때만 적용됩니다."
         },
         "healing": {
           "label": "치유 보너스",
@@ -2707,33 +2707,33 @@
         },
         "hp": {
           "label": "보너스 생명력",
-          "hint": "소환된 크리처의 스텟 블록에 명시된 수치 외에 추가로 더해질 HP입니다."
+          "hint": "소환된 크리쳐의 스텟 블록에 명시된 수치 외에 추가로 더해질 HP입니다."
         },
         "saveDamage": {
           "label": "내성 굴림 보너스 피해",
-          "hint": "내성 굴림을 요구하는 크리처의 능력을 통해 가하는 추가 피해입니다."
+          "hint": "내성 굴림을 요구하는 크리쳐의 능력을 통해 가하는 추가 피해입니다."
         }
       },
       "creatureSizes": {
-        "label": "크리처 크기",
-        "hint": "소환된 크리처와 토큰은 이 크기를 갖게 됩니다. 여러 크기가 선택된 경우, 플레이어는 소환 시 그중 하나를 선택할 수 있습니다."
+        "label": "크리쳐 크기",
+        "hint": "소환된 크리쳐와 토큰은 이 크기를 갖게 됩니다. 여러 크기가 선택된 경우, 플레이어는 소환 시 그중 하나를 선택할 수 있습니다."
       },
       "creatureTypes": {
-        "label": "크리처 유형",
-        "hint": "소환된 크리처는 이 유형으로 변환됩니다. 여러 유형이 선택된 경우, 플레이어는 소환 시 그중 하나를 선택할 수 있습니다."
+        "label": "크리쳐 유형",
+        "hint": "소환된 크리쳐는 이 유형으로 변환됩니다. 여러 유형이 선택된 경우, 플레이어는 소환 시 그중 하나를 선택할 수 있습니다."
       },
       "match": {
         "attacks": {
           "label": "공격 연동",
-          "hint": "소환된 크리처의 공격 명중 수정치를 소환사의 수치와 일치시킵니다."
+          "hint": "소환된 크리쳐의 공격 명중 수정치를 소환사의 수치와 일치시킵니다."
         },
         "proficiency": {
           "label": "숙련 보너스 연동",
-          "hint": "소환된 크리처의 숙련 보너스를 소환사의 보너스와 일치시킵니다."
+          "hint": "소환된 크리쳐의 숙련 보너스를 소환사의 보너스와 일치시킵니다."
         },
         "saves": {
           "label": "내성 굴림 연동",
-          "hint": "소환된 크리처 능력의 내성 DC를 소환사의 수치와 일치시킵니다."
+          "hint": "소환된 크리쳐 능력의 내성 DC를 소환사의 수치와 일치시킵니다."
         },
         "ability": {
           "label": "연동 능력치",
@@ -2741,16 +2741,16 @@
         },
         "disposition": {
           "label": "태도 연동",
-          "hint": "소환된 크리처의 토큰 태도(우호적/적대적 등)를 소환사의 태도와 일치시킵니다."
+          "hint": "소환된 크리쳐의 토큰 태도(우호적/적대적 등)를 소환사의 태도와 일치시킵니다."
         }
       },
       "profiles": {
         "label": "소환 프로필",
         "element": {
           "cr": {
-            "label": "위협 등급",
+            "label": "도전지수",
             "abbr": "CR",
-            "hint": "소환 가능한 크리처의 최대 도전지수입니다."
+            "hint": "소환 가능한 크리쳐의 최대 도전지수입니다."
           },
           "level": {
             "label": "레벨 제한",
@@ -2767,11 +2767,11 @@
             "hint": "대화창에 표시될 프로필 이름입니다."
           },
           "types": {
-            "label": "크리처 유형",
-            "hint": "소환할 크리처를 선택할 수 있는 크리처 유형 목록입니다."
+            "label": "크리쳐 유형",
+            "hint": "소환할 크리쳐를 선택할 수 있는 크리쳐 유형 목록입니다."
           },
           "uuid": {
-            "label": "연결된 크리처"
+            "label": "연결된 크리쳐"
           },
           "count": {
             "label": "수량"
@@ -2786,7 +2786,7 @@
         },
         "mode": {
           "label": "모드",
-          "hint": "소환할 크리처를 지정하는 방식을 설정합니다.",
+          "hint": "소환할 크리쳐를 지정하는 방식을 설정합니다.",
           "CR": "도전지수 및 유형별",
           "Direct": "직접 연결"
         },
@@ -2807,12 +2807,12 @@
       "View": "소환수 보기"
     },
     "CreatureChanges": {
-      "Label": "크리처 수정",
-      "Hint": "소환되는 크리처에게 적용될 수정 사항입니다. 아래 공식에서 사용되는 모든 @ 참조는 소환사의 능력치를 기준으로 합니다. 소환되는 크리처의 능력치는 @summon을 사용하여 참조할 수 있습니다(예: 크리처의 히트 다이스 개수를 참조하려면 @summon.attributes.hd.max 사용)."
+      "Label": "크리쳐 수정",
+      "Hint": "소환되는 크리쳐에게 적용될 수정 사항입니다. 아래 공식에서 사용되는 모든 @ 참조는 소환사의 능력치를 기준으로 합니다. 소환되는 크리쳐의 능력치는 @summon을 사용하여 참조할 수 있습니다(예: 크리쳐의 히트 다이스 개수를 참조하려면 @summon.attributes.hd.max 사용)."
     },
     "ItemChanges": {
       "Label": "아이템 수정",
-      "Hint": "소환된 크리처가 가진 아이템에 적용될 수정 사항입니다."
+      "Hint": "소환된 크리쳐가 가진 아이템에 적용될 수정 사항입니다."
     },
     "Profile": {
       "Label": "소환 프로필",
@@ -2821,16 +2821,16 @@
         "Delete": "프로필 삭제"
       },
       "ChallengeRatingLabel": "도전지수 {cr} 이하",
-      "DropHint": "여기에 크리처를 놓으세요",
+      "DropHint": "여기에 크리쳐를 놓으세요",
       "Empty": "위의 <i class=\"fas fa-plus\"></i> 버튼을 클릭하여 프로필을 생성하세요.",
-      "EmptyDrop": "위의 <i class=\"fas fa-plus\"></i> 버튼을 클릭하여 프로필을 생성하거나 소환할 크리처를 여기에 놓으세요."
+      "EmptyDrop": "위의 <i class=\"fas fa-plus\"></i> 버튼을 클릭하여 프로필을 생성하거나 소환할 크리쳐를 여기에 놓으세요."
     },
     "Warning": {
       "NoOwnership": "'{actor}'을(를) 소환하려면 해당 캐릭터의 소유권이 있어야 합니다.",
       "NoProfile": "'{item}'에서 소환 프로필 {profileId}을(를) 찾을 수 없습니다.",
-      "Wildcard": "와일드카드 이미지를 사용하는 크리처를 소환하려면 파일 탐색기 사용 권한이 있어야 합니다."
+      "Wildcard": "와일드카드 이미지를 사용하는 크리쳐를 소환하려면 파일 탐색기 사용 권한이 있어야 합니다."
     },
-    "Hint": "장면에 새로운 크리처를 소환합니다."
+    "Hint": "장면에 새로운 크리쳐를 소환합니다."
   },
   "DND5E.Summoning": {
     "Label": "소환"
@@ -2857,7 +2857,7 @@
           },
           "type": {
             "label": "대상 유형",
-            "hint": "영향을 받을 수 있는 대상의 유형입니다(예: 크리처, 물체, 공간)."
+            "hint": "영향을 받을 수 있는 대상의 유형입니다(예: 크리쳐, 물체, 공간)."
           }
         },
         "override": {
@@ -2979,12 +2979,12 @@
         }
       },
       "Creature": {
-        "Label": "크리처",
+        "Label": "크리쳐",
         "Counted": {
-          "any": "임의의 크리처",
-          "every": "모든 크리처",
-          "one": "{number}마리의 크리처",
-          "other": "{number}마리의 크리처"
+          "any": "임의의 크리쳐",
+          "every": "모든 크리쳐",
+          "one": "{number}마리의 크리쳐",
+          "other": "{number}마리의 크리쳐"
         }
       },
       "Enemy": {
@@ -2997,12 +2997,12 @@
         }
       },
       "CreatureOrObject": {
-        "Label": "크리처 또는 물체",
+        "Label": "크리쳐 또는 물체",
         "Counted": {
-          "any": "임의의 크리처 또는 물체",
-          "every": "모든 크리처 또는 물체",
-          "one": "{number}개의 크리처 또는 물체",
-          "other": "{number}개의 크리처 또는 물체"
+          "any": "임의의 크리쳐 또는 물체",
+          "every": "모든 크리쳐 또는 물체",
+          "one": "{number}개의 크리쳐 또는 물체",
+          "other": "{number}개의 크리쳐 또는 물체"
         }
       },
       "Object": {
@@ -3048,12 +3048,12 @@
         }
       },
       "WillingCreature": {
-        "Label": "자발적인 크리처",
+        "Label": "자발적인 크리쳐",
         "Counted": {
-          "any": "임의의 자발적인 크리처",
-          "every": "모든 자발적인 크리처",
-          "one": "{number}마리의 자발적인 크리처",
-          "other": "{number}마리의 자발적인 크리처"
+          "any": "임의의 자발적인 크리쳐",
+          "every": "모든 자발적인 크리쳐",
+          "one": "{number}마리의 자발적인 크리쳐",
+          "other": "{number}마리의 자발적인 크리쳐"
         }
       }
     },
@@ -3241,7 +3241,7 @@
           "Label": "해질녘"
         },
         "Initiative": {
-          "Label": "선제권 굴림 시"
+          "Label": "우선권 굴림 시"
         },
         "LongRest": {
           "Label": "긴 휴식",
@@ -3303,7 +3303,7 @@
     "FIELDS": {
       "ammunition": {
         "type": {
-          "label": "탄약 유형"
+          "label": "탄환 유형"
         }
       },
       "damage": {
@@ -3336,17 +3336,17 @@
   "DND5E.WeaponImprov": "임시 무기",
   "DND5E.WeaponMartialM": "군용 근접 무기",
   "DND5E.WeaponMartialProficiency": "군용 무기",
-  "DND5E.WeaponMartialR": "군용 원거리 무기",
-  "DND5E.WeaponNatural": "자연 무기",
+  "DND5E.WeaponMartialR": "군용 장거리 무기",
+  "DND5E.WeaponNatural": "자연학 무기",
   "DND5E.WeaponSiege": "공성 무기",
-  "DND5E.WeaponSimpleM": "일반 근거리 무기",
+  "DND5E.WeaponSimpleM": "일반 근접 무기",
   "DND5E.WeaponSimpleProficiency": "일반 무기",
-  "DND5E.WeaponSimpleR": "일반 원거리 무기",
+  "DND5E.WeaponSimpleR": "일반 장거리 무기",
   "DND5E.Weight": "무게",
   "DND5E.WhisperedTo": "귓속말 대상:",
   "DND5E.Wiki": "위키",
   "DND5E.available": "사용 가능",
-  "DND5E.description": "Foundry VTT 환경을 위한 던전앤드래곤 5판 시스템입니다.",
+  "DND5E.description": "Foundry VTT 환경을 위한 던전앤용족 5판 시스템입니다.",
   "DND5E.of": "/",
   "DND5E.per": "당",
   "DND5E.spell": "주문",
@@ -3630,15 +3630,15 @@
       "Label": "전투 설정",
       "Name": "전투",
       "DexTiebreaker": {
-        "Name": "민첩 선제권 판정",
-        "Hint": "선제권 굴림 결과가 동일할 때, 민첩 능력치 원본 값을 더하여 순위를 결정합니다."
+        "Name": "민첩 우선권 판정",
+        "Hint": "우선권 굴림 결과가 동일할 때, 민첩 능력치 원본 값을 더하여 순위를 결정합니다."
       },
       "InitiativeScore": {
-        "Name": "선제권 고정 수치",
-        "Hint": "선제권 주사위를 굴리는 대신 HP의 고정 선제권(10 + 보너스)을 사용합니다.",
+        "Name": "우선권 고정 수치",
+        "Hint": "우선권 주사위를 굴리는 대신 HP의 고정 우선권(10 + 보너스)을 사용합니다.",
         "All": "모두에게 고정 수치 적용",
         "NPCs": "DM의 NPC에게만 적용",
-        "None": "항상 선제권 굴림 수행"
+        "None": "항상 우선권 굴림 수행"
       }
     },
     "CRITICAL": {
@@ -3769,7 +3769,7 @@
         "Label": "의복"
       },
       "Wondrous": {
-        "Label": "경이 물품"
+        "Label": "경이 물건"
       },
       "Vehicle": {
         "Label": "탈것 장비"
@@ -3815,7 +3815,7 @@
         },
         "creatures": {
           "max": {
-            "label": "크리처 수용량"
+            "label": "크리쳐 수용량"
           }
         }
       },
@@ -3936,7 +3936,7 @@
         "Menagerie": "동물원",
         "Pub": "주점",
         "Sanctum": "밀실",
-        "ArcaneStudy": "비전 서재",
+        "ArcaneStudy": "비전학 서재",
         "Guildhall": "길드 홀",
         "WarRoom": "작전 회의실"
       },
@@ -4140,7 +4140,7 @@
     },
     "Communication": {
       "Telepathy": "정신감응",
-      "Label": "원거리 통신"
+      "Label": "장거리 통신"
     },
     "All": "모든 언어",
     "Label": "언어",
@@ -4171,9 +4171,9 @@
   "DND5E.NPC": {
     "SECTIONS": {
       "Actions": "행동",
-      "BonusActions": "보조 행동",
+      "BonusActions": "추가 행동",
       "LegendaryActions": "전설적 행동",
-      "Reactions": "대응",
+      "Reactions": "반응행동",
       "Traits": "특성",
       "MythicActions": "신화적 행동"
     },
@@ -4453,7 +4453,7 @@
         },
         "ability": {
           "label": "주문 시전 능력",
-          "hint": "크리처의 일반적인 주문시전 능력을 대체하여 사용할 능력치입니다."
+          "hint": "크리쳐의 일반적인 주문시전 능력을 대체하여 사용할 능력치입니다."
         }
       }
     },
@@ -4519,7 +4519,7 @@
       "PartyMembers": "파티원"
     }
   },
-  "DND5E.CreatureTag": "{size} 체격 {type}, {alignment}",
+  "DND5E.CreatureTag": "{size} 크기 {type}, {alignment}",
   "DND5E.Habitat": {
     "Categories": {
       "Any": "모든 서식지",
@@ -4590,13 +4590,13 @@
     },
     "Hint": "이 아이템에 설정된 다른 활동을 발동시키며, 자원 소모 및 성장 수치를 다르게 적용합니다."
   },
-  "DND5E.FlagsAlertHintLegacy": "선제권에 +5 보너스를 제공합니다.",
+  "DND5E.FlagsAlertHintLegacy": "우선권에 +5 보너스를 제공합니다.",
   "DND5E.Gear": "장비",
   "DND5E.LAIR": {
     "Label": "본거지",
     "Action": {
       "Label": "본거지 액션",
-      "Initiative": "본거지 행동 선제권 수치",
+      "Initiative": "본거지 행동 우선권 수치",
       "Uses": "본거지 액션 사용"
     },
     "HasLair": "본거지 보유",
@@ -4659,8 +4659,8 @@
       "other": "{n}번째 전설적 행동"
     },
     "Remaining": "남은 전설적 행동",
-    "Description": "전설적 행동 사용 횟수: {uses}. {name}은(는) 다른 크리처의 차례가 끝난 직후에 사용 횟수를 소모하여 다음 중 하나의 행동을 수행할 수 있습니다. {name}은(는) 자신의 턴이 시작될 때 소모한 모든 사용 횟수를 회복합니다.",
-    "DescriptionLegacy": "{name}은(는) 아래 옵션 중 {usesNamed}을(를) 선택하여 수행할 수 있습니다. 전설적 행동 옵션은 한 번에 하나만 사용할 수 있으며, 다른 크리처의 턴이 끝났을 때만 사용할 수 있습니다. {name}은(는) 자신의 턴이 시작될 때 소모한 전설적 행동 횟수를 회복합니다.",
+    "Description": "전설적 행동 사용 횟수: {uses}. {name}은(는) 다른 크리쳐의 차례가 끝난 직후에 사용 횟수를 소모하여 다음 중 하나의 행동을 수행할 수 있습니다. {name}은(는) 자신의 턴이 시작될 때 소모한 모든 사용 횟수를 회복합니다.",
+    "DescriptionLegacy": "{name}은(는) 아래 옵션 중 {usesNamed}을(를) 선택하여 수행할 수 있습니다. 전설적 행동 옵션은 한 번에 하나만 사용할 수 있으며, 다른 크리쳐의 턴이 끝났을 때만 사용할 수 있습니다. {name}은(는) 자신의 턴이 시작될 때 소모한 전설적 행동 횟수를 회복합니다.",
     "LairUses": "{normal}회 (본거지 내에서는 {lair}회)",
     "LabelPl": "전설적 행동",
     "Spent": "소모한 전설적 행동"
@@ -4866,7 +4866,7 @@
     },
     "Option": {
       "Abilities": "능력치 표시",
-      "Initiative": "선제권 표시",
+      "Initiative": "우선권 표시",
       "Quality": "품질 표시"
     },
     "Tabs": {
@@ -4919,38 +4919,38 @@
         },
         "msak": {
           "damage": {
-            "label": "근거리 주문 피해"
+            "label": "근접 주문 피해"
           },
-          "label": "근거리 주문 보너스",
+          "label": "근접 주문 보너스",
           "attack": {
-            "label": "근거리 주문 공격"
+            "label": "근접 주문 공격"
           }
         },
         "mwak": {
-          "label": "근거리 무기 보너스",
+          "label": "근접 무기 보너스",
           "attack": {
-            "label": "근거리 무기 공격"
+            "label": "근접 무기 공격"
           },
           "damage": {
-            "label": "근거리 무기 피해"
+            "label": "근접 무기 피해"
           }
         },
         "rsak": {
-          "label": "원거리 주문 보너스",
+          "label": "장거리 주문 보너스",
           "attack": {
-            "label": "원거리 주문 공격"
+            "label": "장거리 주문 공격"
           },
           "damage": {
-            "label": "원거리 주문 피해"
+            "label": "장거리 주문 피해"
           }
         },
         "rwak": {
-          "label": "원거리 무기 보너스",
+          "label": "장거리 무기 보너스",
           "attack": {
-            "label": "원거리 무기 공격"
+            "label": "장거리 무기 공격"
           },
           "damage": {
-            "label": "원거리 무기 피해"
+            "label": "장거리 무기 피해"
           }
         },
         "spell": {
@@ -4991,7 +4991,7 @@
           "cr": {
             "abbr": "CR",
             "label": "도전지수",
-            "hint": "원본 크리처의 최대 CR입니다."
+            "hint": "원본 크리쳐의 최대 CR입니다."
           },
           "level": {
             "label": "레벨 제한",
@@ -5005,7 +5005,7 @@
           },
           "movement": {
             "label": "제한된 이동 유형",
-            "hint": "원본 크리처에게 허용되지 않는 이동 유형들입니다."
+            "hint": "원본 크리쳐에게 허용되지 않는 이동 유형들입니다."
           },
           "name": {
             "hint": "대화창에 표시될 프로필 이름입니다.",
@@ -5013,10 +5013,10 @@
           },
           "sizes": {
             "label": "생명체 크기",
-            "hint": "원본 크리처를 선택할 수 있는 크기 목록입니다."
+            "hint": "원본 크리쳐를 선택할 수 있는 크기 목록입니다."
           },
           "types": {
-            "hint": "원본 크리처를 선택할 수 있는 크리처 유형 목록입니다.",
+            "hint": "원본 크리쳐를 선택할 수 있는 크리쳐 유형 목록입니다.",
             "label": "생명체 유형"
           },
           "uuid": {
@@ -5036,7 +5036,7 @@
         },
         "mode": {
           "label": "모드",
-          "hint": "변신할 원본 크리처를 선택하는 방식을 설정합니다.",
+          "hint": "변신할 원본 크리쳐를 선택하는 방식을 설정합니다.",
           "Direct": "직접 연결",
           "CR": "도전지수별"
         },
@@ -5051,7 +5051,7 @@
           "Label": "일대기"
         },
         "CreatureType": {
-          "Label": "크리처 유형"
+          "Label": "크리쳐 유형"
         },
         "Equipment": {
           "Label": "장비"
@@ -5154,7 +5154,7 @@
           "label": "토큰 변신"
         },
         "minimumAC": {
-          "hint": "변신한 크리처의 AC를 정의하는 공식입니다. 캐릭터의 AC가 이보다 높지 않을 경우에만 적용됩니다.",
+          "hint": "변신한 크리쳐의 AC를 정의하는 공식입니다. 캐릭터의 AC가 이보다 높지 않을 경우에만 적용됩니다.",
           "label": "최소 방어도"
         },
         "spellLists": {
@@ -5196,10 +5196,10 @@
         "Create": "프로필 생성",
         "Delete": "프로필 삭제"
       },
-      "ChallengeRatingLabel": "위협 등급 {cr} 이하",
+      "ChallengeRatingLabel": "도전지수 {cr} 이하",
       "Empty": "위의 <i class=\"fas fa-plus\"></i> 버튼을 클릭하여 프로필을 생성하세요.",
       "Label": "변형 프로필",
-      "DropHint": "여기에 크리처를 놓으세요"
+      "DropHint": "여기에 크리쳐를 놓으세요"
     },
     "SECTIONS": {
       "Profiles": "프로필",
@@ -5273,7 +5273,7 @@
     "dnd5e.difficultTerrain": "험지",
     "dnd5e.rotateArea": "구역 회전"
   },
-  "DND5E.Challenge": "위협 등급",
+  "DND5E.Challenge": "도전지수",
   "DND5E.ENCOUNTER": {
     "Tab": {
       "Loot": "전리품",
@@ -5282,7 +5282,7 @@
     },
     "Action": {
       "Award": "XP 및 화폐 보상",
-      "AddCreature": "크리처 추가"
+      "AddCreature": "크리쳐 추가"
     },
     "Difficulty": {
       "high": "매우 어려움",
@@ -5305,7 +5305,7 @@
           "label": "하프캐스터 (팔라딘, 레인저)"
         },
         "Third": {
-          "label": "서드캐스터 (비술 기사, 비전 괴도)"
+          "label": "서드캐스터 (비술 기사, 비전학 괴도)"
         },
         "Artificer": {
           "label": "아티피서"
@@ -5326,7 +5326,7 @@
       }
     },
     "SLOTS": {
-      "spell0": "소주문",
+      "spell0": "소마법",
       "spell1": "1레벨",
       "spell2": "2레벨",
       "spell3": "3레벨",
@@ -5354,7 +5354,7 @@
       "Singleton": "{actorType}에는 {itemType} 유형의 아이템을 하나만 추가할 수 있습니다."
     }
   },
-  "DND5E.FlagsHalflingNimblenessHint": "자신보다 큰 크리처의 공간을 통과할 때 이동이 차단되지 않습니다.",
+  "DND5E.FlagsHalflingNimblenessHint": "자신보다 큰 크리쳐의 공간을 통과할 때 이동이 차단되지 않습니다.",
   "DND5E.FlagsToolExpertise": "도구 전문성",
   "DND5E.FlagsToolExpertiseHint": "숙련된 도구를 사용하는 모든 능력 판정 시 숙련 보너스를 두 배로 적용합니다.",
   "DND5E.LevelAvg": "평균 레벨",
